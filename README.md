@@ -1,0 +1,2 @@
+# ming
+DataMining homework
