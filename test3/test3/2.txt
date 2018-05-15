@@ -1,0 +1,11 @@
+from numpy import *
+filename = 'iris.txt'
+iris = zeros((150, 4), dtype=float)
+f = open(filename);     ''''''
+lines = f.readlines();   '''把数据读到列表中lines'''
+iris_row = 0;           '''表示矩阵的行，从0开始'''
+for line in lines:      '''逐行读取数据'''
+    list_x = line.strip('\n').split(' ');    '''处理逐行数据，并把处理后数据返回到list中取'''
+    iris[iris_row:] = list_x [150:4];        '''处理后的数据存放到iris中'''
+    iris_row += 1;
+print(iris)
